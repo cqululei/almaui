@@ -5,6 +5,7 @@ import View from './components/View'
 import Container from './components/Container'
 import Row from './components/Row'
 import Col from './components/Col'
+import NavigationBar from './components/NavigationBar'
 
 // Texts
 import { Text, Heading, Title, Subtitle, Caption } from './components/Texts'
@@ -19,6 +20,7 @@ export {
   Container,
   Row,
   Col,
+  NavigationBar,
 
   // Texts
   Text,

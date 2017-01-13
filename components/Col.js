@@ -41,8 +41,9 @@ class Col extends Component {
       <View
         {...this.props}
         style={this.containerStyle()}
-        ref={component => (this._root = component)}
-      />
+        ref={component => (this._root = component)}>
+        {this.props.children}
+      </View>
     )
   }
 

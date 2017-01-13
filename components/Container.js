@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import _ from 'lodash'
 import { View } from 'react-native'
 
 import Row from './Row'
@@ -20,11 +19,10 @@ class Container extends Component {
 
   getDirection = () => {
     const { children } = this.props
-    console.log(children)
     let row = false
 
-    _.forEach(children, (child) => {
-      child.type && child.type === Row && (row = true)
+    React.Children.forEach(children, (child) => {
+      child.type === Row && (row = true)
     })
 
     return row
@@ -46,8 +44,9 @@ class Container extends Component {
       <View
         {...this.props}
         style={this.constainerStyle()}
-        ref={component => (this._root = component)}
-      />
+        ref={component => (this._root = component)}>
+        {this.props.children}
+      </View>
     )
   }
 
