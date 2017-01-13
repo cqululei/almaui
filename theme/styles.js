@@ -4,24 +4,50 @@ import Theme from './theme'
 const window = Dimensions.get('window')
 
 export default {
-  lineHeightH1: Theme.lineHeight + 12,
-  lineHeightH2: Theme.lineHeight + 7,
-  lineHeightH3: Theme.lineHeight + 2,
-
-  get fontSizeH1 () {
-    return Theme.fontSizeBase * 1.8
+  // color
+  get light () {
+    return {
+      color: Theme.white
+    }
+  },
+  get dark () {
+    return {
+      color: Theme.dark
+    }
+  },
+  get darker () {
+    return {
+      color: Theme.darker
+    }
   },
 
-  get fontSizeH2 () {
-    return Theme.fontSizeBase * 1.6
+  // Fonts
+  get fontSizeLarge () {
+    return {
+      fontSize: Theme.fontSizeBase * 1.8,
+      lineHeight: Theme.lineHeight + 12
+    }
   },
 
-  get fontSizeH3 () {
-    return Theme.fontSizeBase * 1.4
+  get fontSizeMedium () {
+    return {
+      fontSize: Theme.fontSizeBase * 1.6,
+      lineHeight: Theme.lineHeight + 7
+    }
   },
 
-  get fontSizeH4 () {
-    return Theme.fontSizeBase * 1.2
+  get fontSizeSmall () {
+    return {
+      fontSize: Theme.fontSizeBase * 1.4,
+      lineHeight: Theme.lineHeight + 2
+    }
+  },
+
+  get fontSizeHeading () {
+    return {
+      fontSize: Theme.fontSizeBase * 1.2,
+      lineHeight: Theme.lineHeight
+    }
   },
 
   get fillParent () {
@@ -61,6 +87,14 @@ export default {
 
   get textCenter () {
     return { textAlign: 'center' }
+  },
+
+  get textLeft () {
+    return { textAlign: 'left' }
+  },
+
+  get textRight () {
+    return { textAlign: 'right' }
   },
 
   get bright () {
@@ -266,7 +300,7 @@ export default {
   },
 
   // Button
-  get dark () {
+  get darkButton () {
     return {
       backgroundColor: Theme.darker,
       borderColor: Theme.darker
