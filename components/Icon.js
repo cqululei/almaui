@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import { Platform, TouchableHighlight, StyleSheet, View } from 'react-native'
+import { Platform, TouchableOpacity, StyleSheet, View } from 'react-native'
 
 import { Theme } from '../theme'
 import getIconType from '../utils/getIconType'
@@ -58,7 +58,7 @@ class Icon extends Component {
     } = this.props
 
     let Component = View
-    onPress && (Component = TouchableHighlight)
+    onPress && (Component = TouchableOpacity)
 
     let Icon = type ? getIconType(type) : getIconType('material')
 
