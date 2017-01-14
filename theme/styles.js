@@ -202,8 +202,26 @@ export default {
       resizeMode: 'cover'
     }
   },
+  get avatar () {
+    return {
+      width: 50,
+      height: 50,
+      borderRadius: 25,
+      borderWidth: 0,
+      resizeMode: 'cover'
+    }
+  },
 
   get mediumAvatar () {
+    return {
+      width: 100,
+      height: 100,
+      borderRadius: 50,
+      borderWidth: 0,
+      resizeMode: 'cover'
+    }
+  },
+  get largeAvatar () {
     return {
       width: 145,
       height: 145,

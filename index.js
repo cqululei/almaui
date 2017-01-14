@@ -10,7 +10,12 @@ import NavigationBar from './components/NavigationBar'
 // Texts
 import { Text, Heading, Title, Subtitle, Caption } from './components/Texts'
 
+import Input from './components/Input'
+import Textarea from './components/Textarea'
+
 import Icon from './components/Icon'
+import Avatar from './components/Avatar'
+import Image from './components/Image'
 
 export {
   Theme,
@@ -31,5 +36,10 @@ export {
   Subtitle,
   Caption,
 
-  Icon
+  Input,
+  Textarea,
+
+  Icon,
+  Avatar,
+  Image
 }

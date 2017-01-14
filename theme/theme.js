@@ -41,6 +41,9 @@ export default {
   lineHeight: (Platform.OS === 'ios') ? 20 : 24,
   fontSizeBase: 15,
 
+  // Input
+  textSelectionColor: 'rgb(107, 138, 218)',
+
   // Button
   btnFontFamily: (Platform.OS === 'ios') ? 'HelveticaNeue' : 'Roboto_medium',
   btnDisabledBackground: '#b5b5b5',
