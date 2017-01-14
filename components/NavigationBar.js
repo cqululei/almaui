@@ -62,8 +62,6 @@ class NavigationBar extends Component {
 const styles = {
   container: {
     paddingTop: (Platform.OS === 'ios') ? 15 : 0,
-    paddingBottom: 15,
-    paddingHorizontal: 15,
     height: Theme.toolbarHeight,
     backgroundColor: Theme.navigationBarBackgroundColor,
     borderBottomWidth: 1,
@@ -74,7 +72,7 @@ const styles = {
   rightComponent: CommonStyles.rightComponent,
   componentContainer: {
     flex: 1,
-    alignItems: 'flex-end',
+    alignItems: 'center',
     flexDirection: 'row',
     justifyContent: 'space-between',
     backgroundColor: 'transparent'

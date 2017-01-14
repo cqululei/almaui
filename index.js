@@ -10,6 +10,8 @@ import NavigationBar from './components/NavigationBar'
 // Texts
 import { Text, Heading, Title, Subtitle, Caption } from './components/Texts'
 
+import Icon from './components/Icon'
+
 export {
   Theme,
   ThemeProvider,
@@ -27,5 +29,7 @@ export {
   Heading,
   Title,
   Subtitle,
-  Caption
+  Caption,
+
+  Icon
 }
