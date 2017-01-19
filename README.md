@@ -37,5 +37,5 @@ import { Theme, ThemeProvider } from 'almaui'
 ## Next Steps
 Well done! Alma UI is now ready to be used.
 
-Learn about [[changing themes|Theme]]
+Learn about [changing themes](https://github.com/missingstack/almaui/wiki/Theme)
 
