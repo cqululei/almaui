@@ -12,3 +12,24 @@ If not, please feel free to file your own!
   - Easy to use
   - Customizable theme
   - Support both Android and iOS
+  
+
+## Getting Started  
+Getting up and running with **Alma UI**
+
+Alma UI is open source framework to provide a complete collection of essential high-quality simple, elegant and testable UI components for react-native iOS and Android applications. We provide over 30+ reusable cross-platform components to provide typography, iconography, dropdowns, form elements, container, listView, gridView and much more.
+
+
+
+## Install with npm
+The easiest way to install Alma UI is our NPM package using the following commands.
+```bash
+npm install almaui --save 
+```
+**Include in Your react-native project**
+```bash
+# Import a named property exported by almaui.
+# Theme & ThemeProvider are properties exported for theme
+import { Theme, ThemeProvider } from 'almaui'
+```
+
