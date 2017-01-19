@@ -33,3 +33,9 @@ npm install almaui --save
 import { Theme, ThemeProvider } from 'almaui'
 ```
 
+
+## Next Steps
+Well done! Alma UI is now ready to be used.
+
+Learn about [[changing themes|Theme]]
+
