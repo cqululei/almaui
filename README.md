@@ -11,6 +11,7 @@ If not, please feel free to file your own!
 ## Features
   - Easy to use
   - Customizable theme
+  - Over 30+ reusable components
   - Support both Android and iOS
   
 
