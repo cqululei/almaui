@@ -14,7 +14,7 @@ If not, please feel free to file your own!
   - Support both Android and iOS
   
 
-## Getting Started  
+## Getting Started [🔗](https://github.com/missingstack/almaui/wiki/Getting-started)
 Getting up and running with **Alma UI**
 
 Alma UI is open source framework to provide a complete collection of essential high-quality simple, elegant and testable UI components for react-native iOS and Android applications. We provide over 30+ reusable cross-platform components to provide typography, iconography, dropdowns, form elements, container, listView, gridView and much more.
