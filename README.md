@@ -2,7 +2,10 @@
 **Almaui** components are highly customizable cross-platform UI Components
 to create elegant, testable User Interfaces for React Native applications. We at [missing stack](https://github.com/missingstack), are using these components in our production ready ***React Native Starter*** [Alma](https://github.com/missingstack/alma) and our client projects.
 
-<img height="450px" src="https://github.com/missingstack/almaui-starter/blob/master/assets/Almaui.png?raw=true" alt="AlmaUI" />
+<div style='text-align: center;'>
+  <img height="450px" src="https://github.com/missingstack/almaui-starter/blob/master/assets/Almaui.png?raw=true" alt="AlmaUI" />
+</div>
+
 
 
 If you have a question, please see if any discussions in our
