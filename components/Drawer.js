@@ -31,7 +31,6 @@ class DrawerView extends Component {
 
   render () {
     const { rightSide, content } = this.props
-    console.log(this.props)
     return (
       <Drawer
         {...this.props}

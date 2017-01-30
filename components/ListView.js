@@ -30,6 +30,12 @@ class ListDataSource {
     this.dataSource = new ListView.DataSource(config)
   }
 
+  /**
+   * Transforms items list
+   * ([...items]) to [[...sectionItems], [...sectionItems]]
+   * @param data
+   * @returns {*}
+   */
   groupItemsIntoSections (data) {
     let prevSectionId
     return data.reduce((sections, item) => {
@@ -63,6 +69,8 @@ class CustomListView extends Component {
   constructor (props) {
     super(props)
 
+    // Detecting datasource if rows/header/section are different
+    // to make this function fast!
     this.listDataSource = new ListDataSource({
       rowHasChanged: (r1, r2) => r1 !== r2,
       sectionHeaderHasChanged: props.renderSectionHeader
@@ -75,6 +83,8 @@ class CustomListView extends Component {
 
     this.state = {
       status: props.loading ? Status.LOADING : Status.IDLE,
+      // This is an array of objects with the properties you want
+      // Usually we will get this from data props
       dataSource: this.listDataSource.clone(props.data)
     }
   }
@@ -100,6 +110,8 @@ class CustomListView extends Component {
   }
 
   componentWillReceiveProps = (nextProps) => {
+    // If props data is changed then we have to reset dataSource
+    // when new data arrives
     if (nextProps.data !== this.props.data) {
       this.setState({
         dataSource: this.listDataSource.clone(nextProps.data)
@@ -271,7 +283,10 @@ class CustomListView extends Component {
     newProps.style = style
     newProps.contentContainerStyle = contentStyle
 
-    // Render data
+    // `renderHeader` - How Header should be rendered
+    // `renderRow` - How each cell/row should be rendered
+    // `renderFooter` - How Footer should be rendered
+    // `renderSectionHeader` - How Section should be rendered
     newProps.renderHeader = this.createRenderHeader(
       renderHeader, autoHideHeader
     )
