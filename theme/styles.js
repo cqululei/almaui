@@ -330,6 +330,26 @@ export default {
       paddingLeft: 0,
       paddingRight: 0
     }
+  },
+
+  get primaryBtn () {
+    return { backgroundColor: Theme.primary }
+  },
+
+  get successBtn () {
+    return { backgroundColor: Theme.success }
+  },
+
+  get infoBtn () {
+    return { backgroundColor: Theme.info }
+  },
+
+  get warningBtn () {
+    return { backgroundColor: Theme.warning }
+  },
+
+  get dangerBtn () {
+    return { backgroundColor: Theme.danger }
   }
 
 }

@@ -46,6 +46,7 @@ const styles = {
   text: {
     color: Theme.textColor,
     fontFamily: Theme.fontFamily,
+    paddingRight: Theme.smallGutter,
     letterSpacing: 1
   },
   center: CommonStyles.textCenter,

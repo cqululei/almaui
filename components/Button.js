@@ -5,6 +5,7 @@ import { Theme, CommonStyles } from '../theme'
 import mergeStyles from '../utils/mergeStyles'
 import stringToArray from '../utils/stringToArray'
 import WithThemeHOC from './withThemeHOC'
+import { Text } from './Texts'
 
 class Button extends Component {
 
@@ -34,7 +35,14 @@ class Button extends Component {
   }
 
   render () {
-    const { onPress, onLongPress } = this.props
+    const {
+      onPress,
+      onLongPress,
+      disabled,
+      // Style of the Button's Text compoment
+      textStyle,
+      textStyleName
+    } = this.props
     let Component = View
     onPress && (Component = TouchableOpacity)
     return (
@@ -42,9 +50,17 @@ class Button extends Component {
         {...this.props}
         onLongPress={onLongPress}
         onPress={onPress}
+        disabled={disabled}
+        accessibilityTraits='button'
+        accessibilityComponentType='button'
         style={this.computeStyle()}
         ref={component => (this._root = component)} >
-        {this.props.children}
+        <Text
+          style={textStyle}
+          styleName={textStyleName}
+        >
+          {this.props.children}
+        </Text>
       </Component>
     )
   }
@@ -60,10 +76,16 @@ const styles = {
     borderRadius: 2,
     borderWidth: 1,
     borderColor: Theme.white,
+    paddingVertical: Theme.smallGutter,
     paddingLeft: Theme.mediumGutter,
-    paddingRight: Theme.smallGutter
+    paddingRight: Theme.mediumGutter - Theme.smallGutter
   },
 
+  primary: CommonStyles.primaryBtn,
+  success: CommonStyles.successBtn,
+  info: CommonStyles.infoBtn,
+  warning: CommonStyles.warningBtn,
+  danger: CommonStyles.dangerBtn,
   dark: CommonStyles.dark,
   tight: CommonStyles.tight,
   clear: {

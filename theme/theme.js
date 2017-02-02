@@ -2,6 +2,12 @@ import { Platform } from 'react-native'
 
 export default {
   // Colors
+  primary: '#337ab7',
+  success: '#5cb85c',
+  info: '#5bc0de',
+  warning: '#f0ad4e',
+  danger: '#d9534f',
+
   white: '#FFFFFF',
   grey: '#F2F2F2',
   steel: '#CCCCCC',
@@ -20,7 +26,7 @@ export default {
   navigationBarBorderColor: 'rgba(20, 20, 20, 0.2)',
   navigationBarTextColor: '#000000',
 
-  textColor: '#666666',
+  textColor: '#333333',
   titleColor: '#222222',
   captionColor: '#555555',
   inverseTextColor: '#FFFFFF',
