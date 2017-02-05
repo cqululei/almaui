@@ -55,6 +55,11 @@ export default {
   btnDisabledBackground: '#b5b5b5',
   btnDisabledColor: '#f1f1f1',
 
+  // Checkbox
+  checkboxSize: 26,
+  checkboxBgColor: '#bdc1cc',
+  checkboxBorderColor: '#2f8cff',
+
   // Toolbar
   toolbarHeight: (Platform.OS === 'ios') ? 64 : 56
 }

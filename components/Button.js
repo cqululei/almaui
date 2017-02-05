@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 import { View, TouchableOpacity } from 'react-native'
 
 import { Theme, CommonStyles } from '../theme'
@@ -10,15 +10,21 @@ import { Text } from './Texts'
 class Button extends Component {
 
   static propTypes = {
-    theme: React.PropTypes.object,
-    style: React.PropTypes.oneOfType([
-      React.PropTypes.number,
-      React.PropTypes.object,
-      React.PropTypes.array
-    ])
+    theme: PropTypes.object,
+    style: PropTypes.oneOfType([
+      PropTypes.number,
+      PropTypes.object,
+      PropTypes.array
+    ]),
+    onPress: PropTypes.func,
+    onLongPress: PropTypes.func
   }
 
   static defaultProps = {}
+
+  measureComponent = (event) => {
+    // console.log('properties: ', event.nativeEvent.layout)
+  }
 
   computeStyle = () => {
     const { style, styleName } = this.props
@@ -48,6 +54,7 @@ class Button extends Component {
     return (
       <Component
         {...this.props}
+        onLayout={(event) => this.measureComponent(event)}
         onLongPress={onLongPress}
         onPress={onPress}
         disabled={disabled}

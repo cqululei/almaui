@@ -17,10 +17,11 @@ import { Text, Heading, Title, Subtitle, Caption } from './components/Texts'
 
 import Input from './components/Input'
 import Textarea from './components/Textarea'
+import Badge from './components/Badge'
 import Button from './components/Button'
 // TODO: Implement later
 // import Radio from './components/Radio'
-// import CheckBox from './components/CheckBox'
+import Checkbox from './components/Checkbox'
 // import Switch from './components/Switch'
 // import Select from './components/Select'
 // import InputGroup from './components/InputGroup'
@@ -30,6 +31,7 @@ import Avatar from './components/Avatar'
 import Image from './components/Image'
 import Overlay from './components/Overlay'
 import Card from './components/Card'
+import Carousel from './components/Carousel'
 // TODO: Implement later
 // import Pager from './components/Pager'
 // import ImageGallery from './components/ImageGallery'
@@ -66,13 +68,16 @@ export {
 
   Input,
   Textarea,
+  Badge,
   Button,
+  Checkbox,
 
   Icon,
   Avatar,
   Image,
   Overlay,
   Card,
+  Carousel,
 
   Divider,
   Spinner,
